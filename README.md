@@ -145,16 +145,16 @@ mutator.updateNode({
     ...
   },
   setEdges: {
-    [ONEedgeAttribute]: relationId,
-    [MANYedgeAttribute]: [relationId1, relationId2, ...],
+    [ONEedgeAttribute]: nodeId1,
+    [MANYedgeAttribute]: [nodeId2, nodeId3, ...],
     // setEdges replaces whatever value currently exists
   },
   addEdges: {
-    // can only specify MANY edge attributes (same as above)
+    // can only specify MANY edge attributes (as in setEdges)
     // addEdges will add to the edge attr the specified relation ids
   },
   deleteEdges: {
-    // can only specify MANY edge attributes (same as above)
+    // can only specify MANY edge attributes (as in setEdges)
     // deleteEdges will delete from the edge attr the specified relation ids
   },
 })
