@@ -1,9 +1,9 @@
-import React from 'react'
+import makeMutator from './makeMutator'
+import makeQueryCompMaker from './makeQueryCompMaker'
+import { arrToObjEnums } from './schemaHelpers'
 
-export default React.createClass({
-  render() {
-    return <div>
-      <h2>Welcome to React components</h2>
-    </div>
-  }
-})
+export {
+  makeMutator,
+  makeQueryCompMaker,
+  arrToObjEnums,
+}
